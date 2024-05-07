@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float sprintSpeedMultiplier = 3f; // 달리기 속도 증가 배수
-    public float staminaMax = 100f;
+    public float staminaMax = 100f; // 최대 스태미나 값
     public float staminaRegenRate = 10f;
     public float sprintStaminaDepletionRate = 20f;
 
@@ -19,9 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start() // 게임 시작할때
     {
-        // 마우스 커서 잠금
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked; // 마우스 커서 잠금
 
         stamina = staminaMax;
 
@@ -39,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         float horizontalMovement = 0f;
         float currentSpeed = speed;
 
-        // 이전 키 해제
+        // 키설정 초안
         if (Input.GetKeyUp(KeySetting.keys[KeyAction.FORWARD]))
             verticalMovement = 0f;
         if (Input.GetKeyUp(KeySetting.keys[KeyAction.BACK]))
@@ -89,9 +88,8 @@ public class PlayerMovement : MonoBehaviour
         staminabar.value = stamina;
     }
 
-    void RegenerateStamina()
+    void RegenerateStamina() 
     {
-        // 스태미나 회복
         if (stamina < staminaMax)
         {
             stamina += staminaRegenRate * Time.deltaTime;
