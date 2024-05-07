@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c8610c9971b75428f263293d850691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 250
   playerBody: {fileID: 835438568}
 --- !u!1 &410087039
 GameObject:
@@ -1338,8 +1338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c00964412115194898faf89d78a80ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  sprintSpeedMultiplier: 3
+  speed: 3.5
+  sprintSpeedMultiplier: 2.35
   staminaMax: 100
   staminaRegenRate: 10
   sprintStaminaDepletionRate: 20
@@ -2205,7 +2205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1205431845
 Transform:
   m_ObjectHideFlags: 0
@@ -2885,8 +2885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82f6f217aa22a847822e5799ff9015d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Amount: 0.006
-  Frequency: 8.3
+  Amount: 0.0013
+  Frequency: 5
   Smooth: 60
 --- !u!1 &1594319989
 GameObject:
